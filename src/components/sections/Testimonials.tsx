@@ -3,8 +3,6 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
-  Card, 
-  CardBody, 
   Avatar, 
   Chip,
   Button
@@ -55,7 +53,7 @@ const testimonials = [
 ];
 
 // Компонент рейтинга с анимацией
-const Rating = ({ value, readOnly = false }: { value: number; readOnly?: boolean }) => {
+const Rating = ({ value }: { value: number; readOnly?: boolean }) => {
   return (
     <div className="flex gap-1">
       {[...Array(5)].map((_, i) => (
@@ -195,7 +193,7 @@ const Testimonials = () => {
               style={{ width: `${totalSlides * 100}%` }}
             >
               <AnimatePresence initial={false} mode="wait">
-                {testimonials.map((testimonial, idx) => (
+                {testimonials.map((testimonial) => (
                   <div 
                     key={testimonial.id} 
                     className="w-full flex-shrink-0 px-4 py-8 md:px-10 md:py-10"

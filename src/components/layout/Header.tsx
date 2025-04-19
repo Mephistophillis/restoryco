@@ -10,8 +10,6 @@ import {
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-  NavbarMenu,
-  NavbarMenuItem,
   Link,
   Button,
   useDisclosure,

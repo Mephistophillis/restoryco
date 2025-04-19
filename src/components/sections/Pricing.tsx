@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useState } from "react";
 import { 
   Card, 
   CardBody, 
@@ -10,7 +9,6 @@ import {
   Button, 
   Badge,
   Divider,
-  Switch 
 } from "@heroui/react";
 import { FiCheck } from "react-icons/fi";
 
@@ -57,21 +55,6 @@ const servicesCategories = [
   }
 ];
 
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1
-    }
-  }
-};
-
-const itemVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
-};
-
 const Pricing = () => {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -113,7 +96,7 @@ const Pricing = () => {
           viewport={{ once: true }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
-          {servicesCategories.map((category, index) => (
+          {servicesCategories.map((category) => (
             <motion.div
               key={category.name}
               variants={itemVariants}

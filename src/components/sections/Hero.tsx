@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
-import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { Button } from "@heroui/react";
 import { FiArrowRight, FiCheckCircle, FiAward, FiBook, FiCamera, FiFileText, FiTarget } from "react-icons/fi";
 import Image from "next/image";

@@ -9,10 +9,8 @@ import {
   CardBody,
   CardFooter,
   CardHeader,
-  Image,
   Link,
   Chip,
-  Divider,
 } from "@heroui/react";
 
 const Projects = () => {

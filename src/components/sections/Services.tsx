@@ -10,7 +10,6 @@ import {
   CardFooter,
   CardHeader,
   Link,
-  Chip,
   Divider,
 } from "@heroui/react";
 

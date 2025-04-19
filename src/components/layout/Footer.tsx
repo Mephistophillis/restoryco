@@ -9,9 +9,7 @@ import {
   Button,
   Card,
   CardBody,
-  Divider,
-  Image as HeroImage,
-  Spacer,
+  Divider
 } from "@heroui/react";
 import Image from "next/image";
 

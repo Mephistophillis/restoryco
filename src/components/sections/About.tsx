@@ -7,8 +7,6 @@ import {
   Card,
   CardBody,
   Link,
-  Divider,
-  Image,
   Chip,
 } from "@heroui/react";
 
